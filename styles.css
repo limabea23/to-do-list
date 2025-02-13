@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(255, 255, 255);
 }
 
 body {
@@ -53,6 +52,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     justify-content: space-between;
+    color: rgb(0, 0, 0);
 }
 
 .to-do-list button:hover {
@@ -83,6 +83,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-left: 10px;
+    color: rgb(255, 255, 255);
 }
 
 #taskList .task button:hover {
