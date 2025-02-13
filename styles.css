@@ -1,15 +1,89 @@
-body {
-    background-color: blueviolet;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(252, 252, 252);
 }
 
-.box {
+body {
+    background-color: rgb(138, 43, 226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(131, 28, 156);
+    padding: 20px;
     border-radius: 5px;
-    padding: 100px;
-    background-color: rgb(248, 16, 94);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
 }
 
-.box h1 {
-    
+.to-do-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.to-do-list input {
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid rgb(148, 15, 201);
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s ease;
+}
+
+.to-do-list input:focus {
+    border-color: rgb(237, 138, 250);
+}
+
+.to-do-list button {
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: rgb(237, 138, 250);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.to-do-list button:hover {
+    background-color: rgb(231, 71, 252);
+}
+
+#taskList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#taskList .task {
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(224, 52, 247);
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgb(148, 15, 201);
+}
+
+#taskList .task button {
+    padding: 5px 10px;
+    background-color: rgb(180, 23, 180);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#taskList .task button:hover {
+    background-color: rgb(114, 7, 109);
 }
