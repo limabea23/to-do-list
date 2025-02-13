@@ -5,18 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEA'S TO-DO-LIST</title>
     <link rel="stylesheet" href="/styles.css"/>
-    <script src="script.js"></script>
 </head>
 <body>
-    <main>
         <div class="container">
             <h1>TO-DO-LIST 👽</h1>
             <div class="to-do-list">
                 <input type="text" id="taskInput" placeholder="what do u need to do?">
-                <button onclick="addTask()">add</button>
+                <button id="addTaskBtn">add</button>
             </div>
+            <div id="taskList"></div>
         </div>
-        <div id="taskList"></div>
-    </main>
+        <script src="script.js"></script>
 </body>
 </html>
